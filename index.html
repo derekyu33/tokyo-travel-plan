@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東京8天7夜旅遊規劃 - 2026年1月</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft JhengHei', '微軟正黑體', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #f8f9fa;
+            padding: 20px 30px;
+            border-bottom: 2px solid #e9ecef;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        .info-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 5px solid #667eea;
+        }
+
+        .info-card h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .info-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .info-item strong {
+            color: #764ba2;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .day-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .day-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            border-color: #667eea;
+        }
+
+        .day-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .day-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .day-title {
+            flex: 1;
+        }
+
+        .day-title h3 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 5px;
+        }
+
+        .day-title .date {
+            color: #666;
+            font-size: 1em;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 15px 0;
+        }
+
+        .highlight strong {
+            color: #856404;
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        .section h4 {
+            color: #764ba2;
+            font-size: 1.3em;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .section ul, .section ol {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .section li {
+            margin: 8px 0;
+            line-height: 1.8;
+        }
+
+        .food-list, .transport-list {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .food-list li, .transport-list li {
+            padding: 5px 0;
+        }
+
+        .price-box {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #e17055;
+        }
+
+        .price-box strong {
+            color: #d63031;
+        }
+
+        .tips-box {
+            background: #d1ecf1;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #0c5460;
+        }
+
+        .tips-box strong {
+            color: #0c5460;
+        }
+
+        .practical-info {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+
+        .practical-info h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .practical-info h3 {
+            color: #764ba2;
+            margin: 25px 0 15px 0;
+            font-size: 1.5em;
+        }
+
+        .practical-info h4 {
+            color: #667eea;
+            margin: 20px 0 10px 0;
+            font-size: 1.2em;
+        }
+
+        .checklist {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .checklist ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .checklist li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .checklist li:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-size: 1.2em;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            margin: 0 5px;
+        }
+
+        .badge-warning {
+            background: #ffc107;
+            color: #333;
+        }
+
+        .badge-danger {
+            background: #dc3545;
+        }
+
+        .badge-success {
+            background: #28a745;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+            nav {
+                display: none;
+            }
+            .day-card {
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            .day-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .day-number {
+                margin: 0 auto 15px auto;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #667eea;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            background: #764ba2;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🗾 東京8天7夜旅遊規劃</h1>
+            <div class="subtitle">2026年1月20日 - 1月28日 | 羽田機場進出</div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#basic-info">基本資訊</a></li>
+                <li><a href="#itinerary">行程規劃</a></li>
+                <li><a href="#practical">實用資訊</a></li>
+                <li><a href="#alternatives">備選景點</a></li>
+                <li><a href="#emergency">緊急聯絡</a></li>
+                <li><a href="#checklist">檢查清單</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="basic-info" class="info-card">
+                <h2>📋 基本資訊</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <strong>📅 日期</strong>
+                        2026年1月20日-1月28日（8天7夜）
+                    </div>
+                    <div class="info-item">
+                        <strong>✈️ 機場</strong>
+                        羽田機場（進出）
+                    </div>
+                    <div class="info-item">
+                        <strong>🏨 住宿</strong>
+                        淺草橋站附近東橫inn
+                    </div>
+                    <div class="info-item">
+                        <strong>👨‍👩‍👧 成員</strong>
+                        兩個家庭（各兩大一小，共4大2小）
+                    </div>
+                    <div class="info-item">
+                        <strong>💰 預算</strong>
+                        中等
+                    </div>
+                    <div class="info-item">
+                        <strong>🎯 偏好</strong>
+                        綜合型（購物、美食、文化、動漫）
+                    </div>
+                </div>
+            </section>
+
+            <section id="itinerary">
+                <h2 style="color: #667eea; font-size: 2em; margin-bottom: 30px; text-align: center;">🗓️ 行程規劃</h2>
+
+                <!-- Day 1 -->
+                <div class="day-card" id="day1">
+                    <div class="day-header">
+                        <div class="day-number">1</div>
+                        <div class="day-title">
+                            <h3>抵達日</h3>
+                            <div class="date">1/20（週二）</div>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <strong>重點：</strong>機場→飯店→附近探索
+                    </div>
+                    <div class="section">
+                        <h4>📝 行程</h4>
+                        <ul>
+                            <li>羽田機場→淺草橋站（東橫inn check-in）</li>
+                            <li>淺草橋站周邊熟悉環境</li>
+                            <li>晚餐：淺草橋站附近居酒屋或拉麵店</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🍜 推薦美食</h4>
+                        <div class="food-list">
+                            <ul>
+                                <li><strong>淺草橋站附近：</strong>拉麵店、居酒屋</li>
+                                <li><strong>具體推薦：</strong>
+                                    <ul>
+                                        <li>淺草橋站：らーめん はやし（拉麵）</li>
+                                        <li>淺草寺附近：淺草今半（壽喜燒）、大黑家天婦羅</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <h4>🚇 交通</h4>
+                        <div class="transport-list">
+                            <p><strong>羽田機場→淺草橋：</strong></p>
+                            <ul>
+                                <li><strong>方案1：</strong>京急線→品川→JR山手線→淺草橋（約50分鐘，約650日圓）</li>
+                                <li><strong>方案2：</strong>京急線→新橋→JR總武線→淺草橋（約45分鐘，約650日圓）</li>
+                                <li><strong>方案3：</strong>利木津巴士→東京站→JR總武線→淺草橋（約60-70分鐘，約1,200日圓，適合行李多）</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tips-box">
+                        <strong>💡 Tips：</strong>
+                        <ul>
+                            <li>建議使用方案1或2，較快速且便宜</li>
+                            <li>如行李較多，可考慮利木津巴士</li>
+                            <li>抵達後可在淺草橋站購買Suica/PASMO卡</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="day-card" id="day2">
+                    <div class="day-header">
+                        <div class="day-number">2</div>
+                        <div class="day-title">
+                            <h3>淺草/上野/晴空塔區域</h3>
+                            <div class="date">1/21（週三）</div>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <strong>重點：</strong>傳統文化、購物、夜景
+                    </div>
+                    <div class="section">
+                        <h4>🌅 上午</h4>
+                        <ul>
+                            <li><strong>淺草寺、雷門</strong>（拍照、參拜）
+                                <ul>
+                                    <li>開放時間：6:00-17:00（10月-3月）</li>
+                                    <li>建議停留：1-1.5小時</li>
+                                </ul>
+                            </li>
+                            <li><strong>仲見世通商店街</strong>（傳統小物、人形燒）
+                                <ul>
+                                    <li>長約250公尺，約90家店鋪</li>
+                                    <li>推薦購買：人形燒、雷門燈籠、傳統工藝品</li>
+                                </ul>
+                            </li>
+                            <li><strong>午餐：</strong>淺草附近（天婦羅、鰻魚飯）</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🌆 下午</h4>
+                        <ul>
+                            <li><strong>上野公園</strong>（適合小孩跑跳）
+                                <ul>
+                                    <li>免費入園，寬敞空間</li>
+                                </ul>
+                            </li>
+                            <li><strong>上野動物園</strong>（如果小孩喜歡）
+                                <ul>
+                                    <li>開放時間：9:30-17:00</li>
+                                    <li>門票：成人600日圓、中學生200日圓、小學生以下免費</li>
+                                    <li>有熊貓、北極熊等動物</li>
+                                </ul>
+                            </li>
+                            <li><strong>阿美橫町</strong>（藥妝、零食購物）
+                                <ul>
+                                    <li>藥妝店：松本清、OS Drug</li>
+                                    <li>零食、乾貨、海鮮</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🌃 晚上</h4>
+                        <ul>
+                            <li><strong>晴空塔（Tokyo Skytree）</strong>
+                                <ul>
+                                    <li>開放時間：10:00-21:00</li>
+                                    <li>門票：天望甲板（350m）2,100日圓、天望回廊（450m）追加1,000日圓</li>
+                                    <li><span class="badge badge-warning">需提前預約</span>，建議預約傍晚時段看夜景</li>
+                                </ul>
+                            </li>
+                            <li><strong>晴空塔內購物、晚餐</strong>
+                                <ul>
+                                    <li>購物：Solamachi商場</li>
+                                    <li>晚餐：31樓美食街</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🍜 推薦美食</h4>
+                        <div class="food-list">
+                            <ul>
+                                <li><strong>淺草：</strong>大黑家天婦羅（天丼）、淺草今半（壽喜燒，較高價）、淺草メンチ（炸肉餅）</li>
+                                <li><strong>上野：</strong>一蘭拉麵上野店、上野御徒町美食街、伊豆榮（鰻魚飯）</li>
+                                <li><strong>晴空塔：</strong>31樓美食街（多樣選擇）、敘敘苑燒肉（晴空塔店）</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <h4>🚇 交通</h4>
+                        <div class="transport-list">
+                            <ul>
+                                <li>淺草橋→淺草：JR總武線1站（約3分鐘）或步行15分鐘</li>
+                                <li>淺草→上野：東京地鐵銀座線（約5分鐘）或步行20分鐘</li>
+                                <li>上野→晴空塔：東京地鐵銀座線→押上站（約10分鐘）</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price-box">
+                        <strong>💰 預估費用（每人）：</strong>
+                        <ul>
+                            <li>交通：約500日圓</li>
+                            <li>餐飲：3,000-5,000日圓</li>
+                            <li>景點：上野動物園600日圓（如前往）、晴空塔2,100-3,100日圓</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Day 3 -->
+                <div class="day-card" id="day3">
+                    <div class="day-header">
+                        <div class="day-number">3</div>
+                        <div class="day-title">
+                            <h3>東京迪士尼樂園</h3>
+                            <div class="date">1/22（週四）</div>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <strong>重點：</strong>全天迪士尼體驗
+                    </div>
+                    <div class="section">
+                        <h4>📝 行程</h4>
+                        <ul>
+                            <li><strong>早出晚歸</strong>（開園前抵達，建議8:30前到）</li>
+                            <li>使用Disney Premier Access/快速通關（需額外付費）</li>
+                            <li>適合家庭的設施優先</li>
+                            <li>園內午餐、晚餐</li>
+                            <li>夜間遊行/煙火（視季節而定）</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🎢 推薦設施（適合小孩）</h4>
+                        <ul>
+                            <li><strong>必玩：</strong>小小世界、小熊維尼獵蜜記、加勒比海盜、幽靈公館、星際旅行：冒險續航</li>
+                            <li><strong>表演秀：</strong>日間遊行（通常14:00）、夜間遊行/煙火（視季節）、各種舞台表演</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🚇 交通</h4>
+                        <div class="transport-list">
+                            <p><strong>淺草橋→舞濱站：</strong></p>
+                            <ul>
+                                <li>淺草橋→東京站（JR總武線，約15分鐘）</li>
+                                <li>東京站→舞濱站（JR京葉線，約15分鐘）</li>
+                                <li>總時間約1小時，費用約400日圓</li>
+                            </ul>
+                            <p>舞濱站→迪士尼樂園：步行或迪士尼度假區線（單軌電車）</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <h4>🎫 門票資訊</h4>
+                        <ul>
+                            <li><span class="badge badge-warning">需提前購買</span>（建議1-2個月前）</li>
+                            <li>1日護照：成人7,900-10,900日圓、兒童4,700-5,600日圓（依日期浮動）</li>
+                            <li>可透過官網、Klook、KKday等購買</li>
+                        </ul>
+                    </div>
+                    <div class="tips-box">
+                        <strong>💡 Tips：</strong>
+                        <ul>
+                            <li>下載「東京迪士尼度假區」官方APP</li>
+                            <li>帶推車（可租借，1,000日圓/天）</li>
+                            <li>可帶食物入園（需遵守規定）</li>
+                            <li>園內有嬰兒中心</li>
+                            <li>建議帶充電寶</li>
+                            <li>穿著舒適的鞋子</li>
+                        </ul>
+                    </div>
+                    <div class="price-box">
+                        <strong>💰 預估費用（每人）：</strong>
+                        <ul>
+                            <li>交通：約800日圓（來回）</li>
+                            <li>門票：7,900-10,900日圓（成人）</li>
+                            <li>餐飲：園內約3,000-5,000日圓</li>
+                            <li>紀念品：視個人需求</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Day 4 -->
+                <div class="day-card" id="day4">
+                    <div class="day-header">
+                        <div class="day-number">4</div>
+                        <div class="day-title">
+                            <h3>新宿/澀谷/原宿</h3>
+                            <div class="date">1/23（週五）</div>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <strong>重點：</strong>購物、時尚、美食
+                    </div>
+                    <div class="section">
+                        <h4>🌅 上午</h4>
+                        <ul>
+                            <li><strong>原宿</strong>
+                                <ul>
+                                    <li><strong>竹下通：</strong>年輕時尚、可麗餅、服飾</li>
+                                    <li><strong>表參道：</strong>高級品牌、咖啡廳</li>
+                                    <li>建議停留：1.5-2小時</li>
+                                </ul>
+                            </li>
+                            <li><strong>明治神宮</strong>（參拜、散步）
+                                <ul>
+                                    <li>開放時間：日出至日落</li>
+                                    <li>免費入園，寬敞的森林步道</li>
+                                    <li>適合小孩跑跳</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🌆 下午</h4>
+                        <ul>
+                            <li><strong>澀谷</strong>
+                                <ul>
+                                    <li><strong>109百貨：</strong>年輕女性服飾</li>
+                                    <li><strong>Hikarie：</strong>購物、美食</li>
+                                    <li><strong>澀谷Sky</strong>（展望台，<span class="badge badge-warning">需預約</span>）
+                                        <ul>
+                                            <li>門票：成人2,200日圓</li>
+                                            <li>360度展望台，可看澀谷十字路口</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>忠犬八公像</strong>（拍照）</li>
+                                    <li><strong>澀谷十字路口：</strong>世界最繁忙的十字路口</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🌃 晚上</h4>
+                        <ul>
+                            <li><strong>新宿</strong>
+                                <ul>
+                                    <li><strong>新宿購物：</strong>伊勢丹百貨、高島屋、新宿Lumine、唐吉軻德（24小時）</li>
+                                    <li><strong>晚餐：</strong>新宿美食街</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🍜 推薦美食</h4>
+                        <div class="food-list">
+                            <ul>
+                                <li><strong>原宿：</strong>可麗餅（Marion Crepes、Angels Heart）、Harajuku Gyoza（餃子）、Luke's Lobster（龍蝦三明治）</li>
+                                <li><strong>澀谷：</strong>一風堂拉麵、迴轉壽司（くら寿司、はま寿司）、澀谷Hikarie美食街</li>
+                                <li><strong>新宿：</strong>新宿中村屋咖哩、新宿美食街（多樣選擇）、敘敘苑燒肉（新宿店）</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <h4>🚇 交通</h4>
+                        <div class="transport-list">
+                            <ul>
+                                <li>淺草橋→新宿：JR總武線直達約30分鐘（約200日圓）</li>
+                                <li>新宿→原宿：JR山手線1站（約3分鐘）</li>
+                                <li>原宿→澀谷：JR山手線1站（約3分鐘）</li>
+                                <li>澀谷→新宿：JR山手線2站（約5分鐘）</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price-box">
+                        <strong>💰 預估費用（每人）：</strong>
+                        <ul>
+                            <li>交通：約600日圓</li>
+                            <li>餐飲：3,000-5,000日圓</li>
+                            <li>景點：澀谷Sky 2,200日圓（如前往）</li>
+                            <li>購物：視個人需求</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Day 5 -->
+                <div class="day-card" id="day5">
+                    <div class="day-header">
+                        <div class="day-number">5</div>
+                        <div class="day-title">
+                            <h3>東京迪士尼海洋</h3>
+                            <div class="date">1/24（週六）</div>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <strong>重點：</strong>迪士尼海洋體驗
+                    </div>
+                    <div class="section">
+                        <h4>📝 行程</h4>
+                        <ul>
+                            <li>全天迪士尼海洋</li>
+                            <li>不同於樂園的設施和氛圍（更適合大人，但也有適合小孩的設施）</li>
+                            <li>園內用餐</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🎢 推薦設施</h4>
+                        <ul>
+                            <li><strong>適合小孩：</strong>美人魚礁湖、辛巴達傳奇、阿拉丁的魔法飛毯、旋轉海藻杯</li>
+                            <li><strong>刺激設施（大人）：</strong>地心探險、海底兩萬里、印第安納瓊斯冒險、驚魂古塔</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🚇 交通</h4>
+                        <p>同1/22（淺草橋→舞濱站）</p>
+                    </div>
+                    <div class="section">
+                        <h4>🎫 門票資訊</h4>
+                        <p>同1/22（需提前購買）</p>
+                    </div>
+                    <div class="tips-box">
+                        <strong>💡 Tips：</strong>
+                        <ul>
+                            <li>迪士尼海洋通常比樂園人少一些</li>
+                            <li>同樣建議下載官方APP</li>
+                            <li>美人魚礁湖區域非常適合小孩</li>
+                            <li>園內有適合各年齡層的設施</li>
+                        </ul>
+                    </div>
+                    <div class="price-box">
+                        <strong>💰 預估費用（每人）：</strong>
+                        <ul>
+                            <li>交通：約800日圓（來回）</li>
+                            <li>門票：7,900-10,900日圓（成人）</li>
+                            <li>餐飲：園內約3,000-5,000日圓</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Day 6 -->
+                <div class="day-card" id="day6">
+                    <div class="day-header">
+                        <div class="day-number">6</div>
+                        <div class="day-title">
+                            <h3>豐洲TeamLab Planets</h3>
+                            <div class="date">1/25（週日）</div>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <strong>重點：</strong>數位藝術體驗
+                    </div>
+                    <div class="section">
+                        <h4>🌅 上午</h4>
+                        <ul>
+                            <li><strong>豐洲TeamLab Planets</strong>（<span class="badge badge-warning">需預約</span>，約2-3小時）
+                                <ul>
+                                    <li>開放時間：9:00-22:00</li>
+                                    <li>門票：成人3,800日圓、中學生2,300日圓、小學生以下免費</li>
+                                    <li><span class="badge badge-warning">需提前預約</span>（建議1-2週前）</li>
+                                    <li><span class="badge badge-danger">注意：</span>部分區域需涉水，需準備毛巾或更換衣物</li>
+                                    <li>建議穿著：短褲或可捲起的褲子</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🌆 下午</h4>
+                        <ul>
+                            <li><strong>豐洲市場</strong>（可選，但需早起）
+                                <ul>
+                                    <li>如要參觀，需早上5:00-6:00前往</li>
+                                    <li>可看金槍魚拍賣（需預約）</li>
+                                    <li>市場內壽司店</li>
+                                </ul>
+                            </li>
+                            <li><strong>台場</strong>（購物、海濱公園）
+                                <ul>
+                                    <li><strong>自由女神像</strong>（拍照）</li>
+                                    <li><strong>彩虹橋</strong>（可步行或搭車經過）</li>
+                                    <li><strong>台場海濱公園</strong>（適合小孩）</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🌃 晚上</h4>
+                        <ul>
+                            <li><strong>台場購物中心</strong>
+                                <ul>
+                                    <li><strong>Aqua City：</strong>購物、美食</li>
+                                    <li><strong>DiverCity Tokyo Plaza：</strong>購物、高達立像</li>
+                                    <li><strong>VenusFort：</strong>購物中心</li>
+                                </ul>
+                            </li>
+                            <li><strong>晚餐：</strong>台場美食街</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🍜 推薦美食</h4>
+                        <div class="food-list">
+                            <ul>
+                                <li><strong>豐洲：</strong>市場內壽司（需早起，如：壽司大、大和壽司）</li>
+                                <li><strong>台場：</strong>多樣化餐廳選擇、美食廣場、Bills（鬆餅，澳洲品牌）</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <h4>🚇 交通</h4>
+                        <div class="transport-list">
+                            <p><strong>淺草橋→豐洲：</strong></p>
+                            <ul>
+                                <li>淺草橋→新橋（JR總武線，約20分鐘）</li>
+                                <li>新橋→豐洲（百合海鷗號，約20分鐘）</li>
+                                <li>總時間約50分鐘，費用約500日圓</li>
+                            </ul>
+                            <p><strong>豐洲→台場：</strong>百合海鷗號（約10分鐘）</p>
+                        </div>
+                    </div>
+                    <div class="price-box">
+                        <strong>💰 預估費用（每人）：</strong>
+                        <ul>
+                            <li>交通：約1,000日圓</li>
+                            <li>景點：TeamLab Planets 3,800日圓（成人）</li>
+                            <li>餐飲：3,000-5,000日圓</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Day 7 -->
+                <div class="day-card" id="day7">
+                    <div class="day-header">
+                        <div class="day-number">7</div>
+                        <div class="day-title">
+                            <h3>富士山一日遊</h3>
+                            <div class="date">1/26（週一）</div>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <strong>重點：</strong>富士山周邊景點
+                    </div>
+                    <div class="section">
+                        <h4>🗻 選項A - 河口湖（推薦）</h4>
+                        <ul>
+                            <li><strong>河口湖</strong>
+                                <ul>
+                                    <li>可欣賞富士山倒影</li>
+                                    <li>湖邊散步、拍照</li>
+                                </ul>
+                            </li>
+                            <li><strong>天上山公園（Kachi Kachi山）</strong>
+                                <ul>
+                                    <li>纜車上山（來回900日圓）</li>
+                                    <li>展望台看富士山</li>
+                                    <li>適合小孩</li>
+                                </ul>
+                            </li>
+                            <li><strong>河口湖音樂盒之森美術館</strong>（可選）- 門票：成人1,800日圓</li>
+                            <li><strong>溫泉</strong>（可選）- 河口湖溫泉</li>
+                            <li><strong>富士急樂園</strong>（可選，如小孩喜歡）- 門票：入園1,800日圓，設施另計</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🗻 選項B - 箱根</h4>
+                        <ul>
+                            <li><strong>箱根纜車</strong> - 可看大涌谷、蘆之湖</li>
+                            <li><strong>大涌谷</strong> - 火山活動區域、黑蛋（溫泉蛋）</li>
+                            <li><strong>蘆之湖、海盜船</strong> - 遊湖體驗</li>
+                            <li><strong>溫泉體驗</strong></li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🚇 推薦路線（河口湖）</h4>
+                        <div class="transport-list">
+                            <p><strong>方案1 - 高速巴士（推薦）：</strong></p>
+                            <ul>
+                                <li>淺草橋→新宿（JR總武線，約30分鐘）</li>
+                                <li>新宿→河口湖（高速巴士，約1小時45分鐘，單程2,000日圓）</li>
+                                <li><span class="badge badge-warning">需提前預約</span>（建議1-2週前）</li>
+                            </ul>
+                            <p><strong>方案2 - 電車：</strong></p>
+                            <ul>
+                                <li>淺草橋→新宿→大月（JR中央線，約1.5小時）</li>
+                                <li>大月→河口湖（富士急行線，約1小時）</li>
+                                <li>總時間約2.5小時，費用約3,500日圓</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <h4>🍜 推薦美食</h4>
+                        <div class="food-list">
+                            <ul>
+                                <li><strong>河口湖：</strong>ほうとう（寬麵，山梨縣特色）、富士山造型甜點、湖魚料理</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tips-box">
+                        <strong>💡 Tips：</strong>
+                        <ul>
+                            <li><span class="badge badge-danger">提前預約高速巴士</span>（非常重要）</li>
+                            <li><span class="badge badge-danger">天氣影響富士山可見度</span>，建議查看天氣預報</li>
+                            <li><strong>準備保暖衣物</strong>（山上較冷）</li>
+                            <li>如天氣不佳，可考慮改為其他行程</li>
+                            <li>建議選擇方案1（高速巴士），較快速且舒適</li>
+                        </ul>
+                    </div>
+                    <div class="price-box">
+                        <strong>💰 預估費用（每人）：</strong>
+                        <ul>
+                            <li>交通：約4,000-5,000日圓（來回）</li>
+                            <li>景點：天上山公園纜車900日圓</li>
+                            <li>餐飲：3,000-5,000日圓</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Day 8 -->
+                <div class="day-card" id="day8">
+                    <div class="day-header">
+                        <div class="day-number">8</div>
+                        <div class="day-title">
+                            <h3>吉祥寺</h3>
+                            <div class="date">1/27（週二）</div>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <strong>重點：</strong>悠閒購物、公園、美食
+                    </div>
+                    <div class="section">
+                        <h4>🌅 上午</h4>
+                        <ul>
+                            <li><strong>井之頭恩賜公園</strong>（散步、划船）
+                                <ul>
+                                    <li>免費入園</li>
+                                    <li>可划船（約30分鐘，約700日圓）</li>
+                                    <li>適合小孩跑跳</li>
+                                    <li>1月可能看到早開的櫻花</li>
+                                </ul>
+                            </li>
+                            <li><strong>三鷹之森吉卜力美術館</strong>（需提前預約，如感興趣）
+                                <ul>
+                                    <li>門票：成人1,000日圓、中學生700日圓、小學生400日圓、4歲以下100日圓</li>
+                                    <li><span class="badge badge-warning">需提前1-2個月預約</span>（非常熱門）</li>
+                                    <li>可透過Lawson便利商店或官網預約</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🌆 下午</h4>
+                        <ul>
+                            <li><strong>吉祥寺商店街</strong>
+                                <ul>
+                                    <li><strong>Sunroad商店街：</strong>購物、美食</li>
+                                    <li><strong>口琴橫丁：</strong>窄巷小店、居酒屋</li>
+                                    <li><strong>購物：</strong>藥妝（松本清、OS Drug）、雜貨（Loft、無印良品）、服飾（各種小店）</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🌃 晚上</h4>
+                        <ul>
+                            <li>吉祥寺站附近晚餐</li>
+                            <li>或返回淺草橋附近</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🍜 推薦美食</h4>
+                        <div class="food-list">
+                            <ul>
+                                <li><strong>SATOU牛肉丸</strong>（吉祥寺名物，需排隊）</li>
+                                <li><strong>天音天婦羅</strong>（天婦羅蓋飯）</li>
+                                <li><strong>はらドーナツ</strong>（甜甜圈）</li>
+                                <li>各種小吃、甜點</li>
+                                <li><strong>口琴橫丁居酒屋</strong>（晚上）</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <h4>🚇 交通</h4>
+                        <div class="transport-list">
+                            <p><strong>淺草橋→吉祥寺：</strong></p>
+                            <ul>
+                                <li>淺草橋→新宿（JR總武線，約30分鐘）</li>
+                                <li>新宿→吉祥寺（JR中央線，約15分鐘）</li>
+                                <li>總時間約50分鐘，費用約400日圓</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price-box">
+                        <strong>💰 預估費用（每人）：</strong>
+                        <ul>
+                            <li>交通：約800日圓（來回）</li>
+                            <li>景點：井之頭公園划船700日圓、吉卜力美術館1,000日圓（如前往）</li>
+                            <li>餐飲：3,000-5,000日圓</li>
+                            <li>購物：視個人需求</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Day 9 -->
+                <div class="day-card" id="day9">
+                    <div class="day-header">
+                        <div class="day-number">9</div>
+                        <div class="day-title">
+                            <h3>回程日</h3>
+                            <div class="date">1/28（週三）</div>
+                        </div>
+                    </div>
+                    <div class="highlight">
+                        <strong>重點：</strong>最後購物、前往機場
+                    </div>
+                    <div class="section">
+                        <h4>🌅 上午</h4>
+                        <ul>
+                            <li>飯店check-out（通常10:00-11:00）</li>
+                            <li>淺草橋站附近最後採買
+                                <ul>
+                                    <li>藥妝店</li>
+                                    <li>伴手禮店</li>
+                                    <li>便利商店</li>
+                                </ul>
+                            </li>
+                            <li>或前往機場附近outlet（如時間允許）
+                                <ul>
+                                    <li>羽田機場附近：Grandberry Park（需轉車）</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🌆 下午</h4>
+                        <ul>
+                            <li>前往羽田機場</li>
+                            <li>辦理登機、免稅店購物</li>
+                            <li>建議提前2-3小時抵達機場</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>🚇 交通</h4>
+                        <div class="transport-list">
+                            <p><strong>淺草橋→羽田機場：</strong></p>
+                            <ul>
+                                <li><strong>方案1：</strong>淺草橋→品川（JR總武線→JR山手線，約30分鐘）→羽田機場（京急線，約15分鐘）</li>
+                                <li><strong>方案2：</strong>淺草橋→新橋（JR總武線，約20分鐘）→羽田機場（京急線，約20分鐘）</li>
+                                <li>總時間約50-60分鐘，費用約650日圓</li>
+                                <li><strong>方案3：</strong>利木津巴士（如行李多）- 約1.5小時，約1,200日圓</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tips-box">
+                        <strong>💡 Tips：</strong>
+                        <ul>
+                            <li>建議使用方案1或2</li>
+                            <li>確認航班時間，預留充足時間</li>
+                            <li>羽田機場免稅店可購買最後的伴手禮</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="practical" class="practical-info">
+                <h2>📚 實用資訊</h2>
+
+                <h3>🚇 交通建議</h3>
+                <h4>IC卡</h4>
+                <ul>
+                    <li><strong>Suica/PASMO：</strong>必備IC卡
+                        <ul>
+                            <li>可在車站自動售票機購買</li>
+                            <li>押金500日圓（可退）</li>
+                            <li>可用於電車、巴士、便利商店、自動販賣機</li>
+                            <li>建議每人一張</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h4>交通券評估</h4>
+                <ul>
+                    <li><strong>JR Pass：</strong>8天行程可能不划算（主要在東京市內移動），建議不購買</li>
+                    <li><strong>東京地鐵72小時券：</strong>1,500日圓，72小時內無限次搭乘東京地鐵，視行程決定</li>
+                    <li><strong>東京廣域周遊券（3天）：</strong>10,180日圓，可到富士山、輕井澤等，如1/26使用，可考慮（但只有1天，可能不划算）</li>
+                </ul>
+
+                <h4>導航工具</h4>
+                <ul>
+                    <li><strong>Google Maps：</strong>導航必備</li>
+                    <li><strong>換乘案內APP：</strong>日本電車換乘查詢</li>
+                    <li><strong>東京地鐵APP：</strong>官方APP</li>
+                </ul>
+
+                <h3>🍜 美食推薦（適合家庭）</h3>
+                <h4>迴轉壽司</h4>
+                <ul>
+                    <li><strong>くら寿司、はま寿司、壽司郎、元祖壽司：</strong>平價，每盤110日圓起</li>
+                </ul>
+
+                <h4>拉麵</h4>
+                <ul>
+                    <li><strong>一蘭拉麵：</strong>個人座位，可選口味</li>
+                    <li><strong>一風堂：</strong>白丸、赤丸</li>
+                    <li><strong>無敵家：</strong>池袋（較遠）</li>
+                    <li><strong>らーめん はやし：</strong>淺草橋附近</li>
+                </ul>
+
+                <h4>燒肉</h4>
+                <ul>
+                    <li><strong>敘敘苑：</strong>中高價位，品質好</li>
+                    <li><strong>牛角：</strong>平價連鎖</li>
+                    <li><strong>燒肉LIKE：</strong>個人燒肉，快速</li>
+                </ul>
+
+                <h4>居酒屋</h4>
+                <ul>
+                    <li><strong>鳥貴族：</strong>平價，每道298日圓</li>
+                    <li><strong>和民：</strong>連鎖居酒屋</li>
+                    <li><strong>磯丸水產：</strong>海鮮居酒屋</li>
+                </ul>
+
+                <h4>甜點</h4>
+                <ul>
+                    <li><strong>Harbs：</strong>水果蛋糕（新宿、澀谷等）</li>
+                    <li><strong>各種和菓子：</strong>傳統日式甜點</li>
+                    <li><strong>可麗餅：</strong>原宿</li>
+                    <li><strong>Pablo：</strong>起司塔</li>
+                </ul>
+
+                <h3>🛍️ 購物推薦</h3>
+                <h4>藥妝店</h4>
+                <ul>
+                    <li><strong>松本清：</strong>最大連鎖，分店多</li>
+                    <li><strong>唐吉軻德：</strong>24小時，商品多樣</li>
+                    <li><strong>OS Drug：</strong>較便宜，但需現金</li>
+                    <li><strong>Sundrug：</strong>連鎖藥妝</li>
+                </ul>
+                <p><strong>推薦購買：</strong>藥品（EVE止痛藥、大正感冒藥、眼藥水）、化妝品（SK-II、資生堂、KOSE）、保養品（面膜、化妝水）、零食（各種限定商品）</p>
+
+                <h4>電器</h4>
+                <ul>
+                    <li><strong>Bic Camera、Yodobashi Camera、LABI：</strong>大型電器連鎖</li>
+                </ul>
+                <p><strong>推薦購買：</strong>電器（吹風機、電鍋、保溫瓶）、3C（相機、手機配件）、美容家電（洗臉機、美容器）</p>
+
+                <h4>服飾</h4>
+                <ul>
+                    <li><strong>Uniqlo、GU：</strong>平價服飾</li>
+                    <li><strong>無印良品：</strong>簡約風格</li>
+                    <li><strong>各種品牌：</strong>新宿、澀谷、原宿</li>
+                </ul>
+
+                <h4>伴手禮</h4>
+                <ul>
+                    <li><strong>東京香蕉：</strong>東京名物</li>
+                    <li><strong>白色戀人、Royce生巧克力：</strong>北海道（機場可買）</li>
+                    <li><strong>各種限定商品：</strong>依季節而定</li>
+                </ul>
+
+                <h3>⚠️ 注意事項</h3>
+                <h4>天氣與衣物</h4>
+                <ul>
+                    <li><strong>1月天氣：</strong>較冷，平均溫度5-10度</li>
+                    <li><strong>建議穿著：</strong>保暖外套（羽絨衣）、圍巾、手套、保暖內衣、舒適的鞋子（會走很多路）</li>
+                    <li><strong>室內暖氣：</strong>室內通常很暖，建議洋蔥式穿搭</li>
+                </ul>
+
+                <h4>預約事項</h4>
+                <ul>
+                    <li><span class="badge badge-warning">迪士尼門票：</span>需提前1-2個月購買</li>
+                    <li><span class="badge badge-warning">TeamLab Planets：</span>需提前1-2週預約</li>
+                    <li><span class="badge badge-warning">澀谷Sky：</span>需提前預約</li>
+                    <li><span class="badge badge-warning">富士山高速巴士：</span>需提前1-2週預約</li>
+                    <li><span class="badge badge-warning">吉卜力美術館：</span>需提前1-2個月預約（如前往）</li>
+                </ul>
+
+                <h4>其他注意事項</h4>
+                <ul>
+                    <li><strong>推車：</strong>帶推車（小孩），迪士尼可租借</li>
+                    <li><strong>常用藥品：</strong>準備感冒藥、止痛藥等</li>
+                    <li><strong>充電寶：</strong>手機、相機充電</li>
+                    <li><strong>現金：</strong>部分店家只收現金，建議帶足夠現金</li>
+                    <li><strong>信用卡：</strong>大部分地方可刷卡</li>
+                    <li><strong>Wi-Fi：</strong>建議租借Wi-Fi機或購買SIM卡</li>
+                    <li><strong>語言：</strong>大部分地方有中文標示，但建議下載翻譯APP</li>
+                    <li><strong>禮儀：</strong>遵守日本禮儀，不要在電車上講電話、吃東西</li>
+                </ul>
+
+                <h3>💰 預算參考（每人/天，中等預算）</h3>
+                <h4>餐飲</h4>
+                <ul>
+                    <li>早餐：500-1,000日圓（便利商店或飯店）</li>
+                    <li>午餐：1,000-2,000日圓</li>
+                    <li>晚餐：2,000-3,000日圓</li>
+                    <li>小食/飲料：500-1,000日圓</li>
+                    <li><strong>總計：約4,000-7,000日圓/天</strong></li>
+                </ul>
+
+                <h4>交通</h4>
+                <ul>
+                    <li>市內移動：500-1,000日圓/天</li>
+                    <li>迪士尼：約800日圓（來回）</li>
+                    <li>富士山：約4,000-5,000日圓（來回）</li>
+                    <li><strong>總計：約1,000-2,000日圓/天（平均）</strong></li>
+                </ul>
+
+                <h4>景點門票</h4>
+                <ul>
+                    <li>迪士尼：7,900-10,900日圓（1日）</li>
+                    <li>TeamLab Planets：3,800日圓</li>
+                    <li>晴空塔：2,100-3,100日圓</li>
+                    <li>澀谷Sky：2,200日圓</li>
+                    <li>上野動物園：600日圓</li>
+                    <li>其他：視個人選擇</li>
+                </ul>
+
+                <h4>購物</h4>
+                <ul>
+                    <li>視個人需求</li>
+                    <li>建議預留20,000-50,000日圓/人（8天）</li>
+                </ul>
+
+                <h4>總預算估算（每人，8天7夜）</h4>
+                <div class="price-box" style="font-size: 1.1em;">
+                    <ul>
+                        <li><strong>住宿：</strong>約50,000-70,000日圓（7晚，依飯店而定）</li>
+                        <li><strong>餐飲：</strong>約32,000-56,000日圓（8天）</li>
+                        <li><strong>交通：</strong>約8,000-16,000日圓（8天）</li>
+                        <li><strong>景點門票：</strong>約20,000-30,000日圓（含迪士尼2天）</li>
+                        <li><strong>購物：</strong>20,000-50,000日圓</li>
+                        <li><strong>總計：</strong>約130,000-222,000日圓/人（不含住宿）</li>
+                        <li><strong>含住宿：</strong>約180,000-292,000日圓/人</li>
+                    </ul>
+                    <p style="margin-top: 10px; font-style: italic;">*以上為估算，實際費用依個人消費而定*</p>
+                </div>
+            </section>
+
+            <section id="alternatives" class="practical-info">
+                <h2>📍 備選景點（如時間允許）</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <strong>秋葉原</strong>
+                        <p>特色：動漫、電器、女僕咖啡廳</p>
+                        <p>適合：動漫迷、電器愛好者</p>
+                        <p>交通：淺草橋→秋葉原（JR總武線，約5分鐘）</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>銀座</strong>
+                        <p>特色：高級購物、百貨公司</p>
+                        <p>適合：購物、高級品牌</p>
+                        <p>交通：淺草橋→銀座（JR總武線→東京地鐵，約20分鐘）</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>六本木</strong>
+                        <p>特色：夜景、美術館、夜生活</p>
+                        <p>適合：藝術、夜景</p>
+                        <p>交通：淺草橋→六本木（JR總武線→東京地鐵，約30分鐘）</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>東京鐵塔</strong>
+                        <p>特色：經典地標、展望台</p>
+                        <p>適合：拍照、夜景</p>
+                        <p>交通：淺草橋→東京鐵塔（JR總武線→東京地鐵，約30分鐘）</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>築地市場（外市場）</strong>
+                        <p>特色：海鮮、壽司、傳統市場</p>
+                        <p>適合：美食、體驗</p>
+                        <p>交通：淺草橋→築地（JR總武線→東京地鐵，約25分鐘）</p>
+                        <p><span class="badge badge-warning">注意：內市場已搬遷至豐洲，外市場仍在</span></p>
+                    </div>
+                    <div class="info-item">
+                        <strong>東京車站</strong>
+                        <p>特色：歷史建築、購物、美食</p>
+                        <p>適合：購物、拍照</p>
+                        <p>交通：淺草橋→東京站（JR總武線，約15分鐘）</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="emergency" class="practical-info">
+                <h2>🆘 緊急聯絡資訊</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <strong>重要電話</strong>
+                        <ul>
+                            <li>警察：110</li>
+                            <li>救護車/消防：119</li>
+                            <li>旅遊諮詢熱線：050-3816-2787（24小時，中文服務）</li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <strong>醫院</strong>
+                        <ul>
+                            <li>東京醫科大學醫院：03-3342-6111</li>
+                            <li>聖路加國際醫院：03-3541-5151（有中文服務）</li>
+                        </ul>
+                    </div>
+                    <div class="info-item">
+                        <strong>台灣駐日代表處</strong>
+                        <ul>
+                            <li>地址：東京都港區白金台5-20-2</li>
+                            <li>電話：03-3280-7811</li>
+                            <li>緊急聯絡：090-8794-4567</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="checklist" class="practical-info">
+                <h2>✅ 行程檢查清單</h2>
+                <div class="checklist">
+                    <h3>出發前</h3>
+                    <ul>
+                        <li>確認機票、飯店預訂</li>
+                        <li>購買迪士尼門票</li>
+                        <li>預約TeamLab Planets</li>
+                        <li>預約富士山高速巴士</li>
+                        <li>預約其他需預約的景點（如：澀谷Sky、吉卜力美術館）</li>
+                        <li>準備護照、簽證（如需要）</li>
+                        <li>購買旅遊保險</li>
+                        <li>兌換日圓或準備信用卡</li>
+                        <li>下載必要APP（Google Maps、翻譯APP等）</li>
+                        <li>準備衣物（依天氣）</li>
+                        <li>準備常用藥品</li>
+                        <li>確認Wi-Fi/SIM卡</li>
+                    </ul>
+                </div>
+                <div class="checklist">
+                    <h3>每日檢查</h3>
+                    <ul>
+                        <li>確認當日行程</li>
+                        <li>確認交通路線</li>
+                        <li>確認餐廳預約（如需要）</li>
+                        <li>確認景點開放時間</li>
+                        <li>確認天氣預報</li>
+                        <li>攜帶充電寶、相機</li>
+                        <li>攜帶現金、IC卡</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="practical-info" style="background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%); border-left: 5px solid #e17055;">
+                <h2>📝 結語</h2>
+                <p style="font-size: 1.1em; line-height: 1.8; margin-bottom: 15px;">
+                    這份規劃涵蓋了東京的主要景點和適合家庭的活動。請根據實際情況和天氣調整行程。祝您旅途愉快！
+                </p>
+                <div class="tips-box" style="background: white;">
+                    <strong>重要提醒：</strong>
+                    <ul>
+                        <li>1月天氣較冷，請注意保暖</li>
+                        <li>部分景點需提前預約，請務必提前安排</li>
+                        <li>迪士尼和TeamLab非常熱門，建議提前預約</li>
+                        <li>富士山行程受天氣影響，建議準備備案</li>
+                    </ul>
+                </div>
+                <p style="margin-top: 20px; font-style: italic;">
+                    如有任何問題或需要調整，請隨時參考這份規劃。
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>東京8天7夜旅遊規劃 | 2026年1月20日-1月28日</p>
+            <p style="margin-top: 10px; opacity: 0.8;">祝您旅途愉快！</p>
+        </footer>
+    </div>
+
+    <div class="scroll-top" id="scrollTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        ↑
+    </div>
+
+    <script>
+        // 平滑滾動
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 返回頂部按鈕
+        window.addEventListener('scroll', function() {
+            const scrollTop = document.getElementById('scrollTop');
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>
+
